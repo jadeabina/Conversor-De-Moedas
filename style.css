@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --montserrat: 'Montserrat', sans-serif;
+  --background: #383a59;
+  --bg-color: linear-gradient(111.1deg, rgb(195, 227, 252) -4.8%, rgb(150, 150, 150) 82.7%, rgb(248, 218, 199) 97.2%);
+  --title: #181818;
+  --text-dark: #202020;
+  --text-light: #f2f2f2;
+  --button: #ced4da;
+}
+
+body {
+  font-family: var(--montserrat);
+  min-height: 100vh;
+  background: var(--bg-color); /* Mantive o fundo padrão */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outer-container {
+  background: #f0f0f0; /* Cor de fundo da caixa */
+  border: 2px solid var(--text-light); /* Adicionei uma borda */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.container-title {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  color: var(--text-light);
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: var(--text-light);
+  margin-top: 5px;
+}
+
+.container {
+  width: 28.185rem;
+}
+
+h1 {
+  color: var(--title);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.container .box {
+  width: 100%;
+  display: flex;
+}
+
+.box div {
+  width: 100%;
+}
+
+select,
+input {
+  width: 95%;
+  height: 2.5rem;
+  margin: 0.2rem 0;
+  padding: 0 0.7rem;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+}
+
+select {
+  background: var(--button);
+  color: var(--text-dark);
+}
+
+input {
+  background: var(--text-light);
+}
+
+.button-converter {
+  width: 98%;
+  height: 40px;
+  margin: 0.5em 0;
+  font-size: 1em;
+  background: rgba(40, 42, 53, 1);
+  color: var(--text-light);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.button-converter:hover {
+  background-color: rgba(40, 42, 53, .8);
+}
