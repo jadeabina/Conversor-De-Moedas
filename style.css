@@ -47,7 +47,8 @@ body {
 }
 
 .container {
-  width: 28.185rem;
+
+  text-align: center
 }
 
 h1 {
@@ -98,8 +99,11 @@ input {
   border: none;
   cursor: pointer;
   transition: .2s;
+  
 }
 
 .button-converter:hover {
   background-color: rgba(40, 42, 53, .8);
+  
+
 }
